@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav
+            class="bg-white  px-4 py-2 shadow-2xl rounded-lg mt-2  p-3 flex  justify-between items-center max-w-screen-xl mx-auto">
+            <div>
+                <div class="flex items-center space-x-2">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+                </div>
+            </div>
+            <div>
+                <button id="backBtn" class="bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-lg">Back to Desk</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <div>
+            <div class="mt-4">
+            <h1 class="flex justify-center font-bold text-2xl">Blog</h1>
+        </div>
+
+        <div class="mt-4">
+
+            <div class="bg-white  px-4 py-2 shadow-2xl rounded-md mt-1  p-3  max-w-screen-xl mx-auto">
+                <p class="font-bold">Question-1: What are the different ways to select an element in the DOM?</p>
+                <div class="mt-3 w-full border-t border-dashed border-indigo-200"></div>
+                <div class="mt-2 text-gray-700">
+                    document.getElementById("id"). Selects a specific element by its ID.
+                    Returns only one element. document.getElementsByClassName("class")Selects all elements with the
+                    given class name. Returns an HTMLCollection (like a list).
+                    document.getElementsByTagName("tag")Selects elements by tag name ("p", "div"). Returns multiple
+                    elements.
+                    document.getElementsByName("name") Selects elements by the name attribute. Often used with form
+                    elements. document.querySelector("selector") Selects the first matching element using a CSS
+                    selector. Example: "#id", ".class". document.querySelectorAll("selector") Selects all matching
+                    elements using a CSS selector.Returns a NodeList (like a list).
+                </div>
+            </div>
+            <div class="bg-white  px-4 py-2 shadow-2xl rounded-md mt-1  p-3  max-w-screen-xl mx-auto">
+                <p class="font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                </p>
+                <div class="mt-3 w-full border-t border-dashed border-indigo-200"></div>
+                <div class="mt-2 text-gray-700">
+                    innerHTML-Gets or sets HTML content inside an element. Can read/write tags and text. Example:
+                    element.innerHTML = "&lt;p&gt;Hello!!!&lt;/p&gt;";
+                    innerText-Gets or sets the visible text (what user sees). Ignores hidden elements (display: none).
+                    Example: element.innerText = "Hello";
+                    textContent-Gets or sets all text, even if hidden.
+                    Faster than innerText. Example: element.textContent = "Hello";
+                </div>
+            </div>
+            <div class="bg-white  px-4 py-2 shadow-2xl rounded-md mt-1  p-3  max-w-screen-xl mx-auto">
+                <p class="font-bold">Question-3: What is event delegation in the DOM?</p>
+                <div class="mt-3 w-full border-t border-dashed border-indigo-200"></div>
+                <div class="mt-2 text-gray-700">
+                    Event delegation is a technique where you handle events (like click) at a parent element, instead of
+                    adding listeners to each child.
+                    Why use it? Better performance.Fewer event listeners.Works for new (dynamic) child elements. How it
+                    works: Add one event listener to the parent.Use event.target to find which child triggered the event
+                </div>
+            </div>
+            <div class="bg-white  px-4 py-2 shadow-2xl rounded-md mt-1  p-3  max-w-screen-xl mx-auto">
+                <p class="font-bold">Question-4: What is event bubbling in the DOM?</p>
+                <div class="mt-3 w-full border-t border-dashed border-indigo-200"></div>
+                <div class="mt-2 text-gray-700">
+                    Event bubbling is when an event happens on a child element and then moves up to its parent,
+                    grandparent,
+                    and so on. Use: Useful for event delegation.Useful for event delegation
+                </div>
+            </div>
+            <div class="bg-white  px-4 py-2 shadow-2xl rounded-md mt-1  p-3  max-w-screen-xl mx-auto">
+                <p class="font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+                <div class="mt-3 w-full border-t border-dashed border-indigo-200"></div>
+                <div class="mt-2 text-gray-700">
+                    1. Create Element: let newDiv = document.createElement("div");
+                    2. Add Element: parent.appendChild(newDiv);
+                    3. Remove Element: element.remove();
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+        </div>
+
+
+    </main>
+
+    <script src="js/news.js"></script>
+</body>
+
+</html>
